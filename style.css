@@ -20,6 +20,23 @@ body{
     text-align: center;
     display: none;
 }
+.info{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    line-height: 40px;
+    position: absolute;
+    margin-top: 20vh;
+    border: solid 1px black;
+    padding: 30px;
+    border-radius: 10px;
+}
+.info_icon{
+    height: 25px;
+}
+/* .info p{
+    background-color: aqua;
+} */
 #title_logo{
     background-image: url("./assets/title-01.png");
     background-size: cover;

@@ -27,6 +27,7 @@ restartButton.addEventListener("click", () => location.reload())
 
 //------GENERATE-MAP-----------------------------------------------------
 setInterval(changeBgColor, 500);
+setInterval(hideInfos, 4000);
 
 function startInterval(_interval) {
     invaderPopulate = setInterval(goInvaders, _interval * 6);

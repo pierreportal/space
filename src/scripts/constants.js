@@ -8,10 +8,17 @@ const colorInOn = false;
 const hardMode = true;
 const createInvaders = true;
 
+const infoDisplay = document.querySelector(".info");
 const scoreDisplay = document.querySelector("#score_display");
 const restartButton = document.querySelector(".restrat_game");
 
 // CALL BACK FUNCTIONS :
+function hideInfos() {
+    infoDisplay.style.display = 'none';
+}
+
+
+
 function changeConstantSpeed() {
     constantSpeed += .2;
 }
