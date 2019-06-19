@@ -83,6 +83,7 @@ function draw() {
                         console.log("SHOOT")
                         if (obj === 'invaders') {
                             nInvadersDestroyed += 1;
+                            document.body.style.backgroundColor = "hsl(150, 90%, 60%)";
                         }
                         else if (obj === 'planets') {
                             destroyed = 0;
