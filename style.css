@@ -21,7 +21,7 @@ body{
     display: none;
 }
 #title_logo{
-    background-image: url("assets/title-01.png");
+    background-image: url("./assets/title-01.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 153px;
@@ -38,7 +38,7 @@ h1{
 #gameover{
     /* position: absolute; */
     /* margin-top: 50vh; */
-    background-image: url("assets/game_over-01.png");
+    background-image: url("./assets/game_over-01.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 450px;
