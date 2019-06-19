@@ -14,6 +14,7 @@ class Ship {
     }
     draw() {
         push()
+
         translate(this.x, this.y)
         this.y += .3;
         rotate(this.angle % 360)
@@ -121,7 +122,6 @@ class Invader {
         noFill()
         rotate(this.angle)
         image(this.icon, 0, 0, this.size[0], this.size[1])
-        //text(this.lives, 0, 0)
         this.y += constantSpeed * 0.2 * speedY;
         this.x += this.direction * constantSpeed;
         this.angle = this.direction;
@@ -146,7 +146,6 @@ class Fires {
         }
         strokeWeight(2)
         line(0, 0, 0, 1)
-
         stroke(color("black"))
         this.y += 4 + speedY;
         this.collistionBoxe = getCollistionBoxe(this)
