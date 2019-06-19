@@ -99,7 +99,6 @@ function draw() {
             }
         })
     })
-
     if (keyIsDown(DOWN_ARROW) && !gameIsOver) {
         objects.lazer.push(new Lazer(ship.x, ship.y));
         objects.lazer.forEach(x => x.draw());

@@ -1,4 +1,4 @@
-# ironhack_project_1
-Javascript game with p5
+# Space !
+## Ironhack first project - Javascript game with p5.
 
-
+<b>Space</b> is a space shooter game. 
