@@ -1,11 +1,5 @@
 console.log("constants.js connected")
-let myAudio;
-myAudio = new Audio('/assets/space_full01.mp3');
-myAudio.addEventListener('ended', function () {
-    this.currentTime = 0;
-    this.play();
-}, false);
-myAudio.play();
+
 
 const WIDTH = document.body.offsetWidth;
 const HEIGHT = document.body.offsetHeight;
