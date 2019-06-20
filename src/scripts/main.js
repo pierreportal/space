@@ -49,25 +49,23 @@ if (hardMode && !gameIsOver) {
 }
 //---------------SETUP------------------------------
 let fullSong;
-function preload() {
-    fullSong = loadSound("assets/space_full01.wav")
+function keyPressed() {
+    if (!fullSong) fullSong = loadSound("assets/space_full01.mp3")
 }
+// function preload() {
+//     fullSong = loadSound("assets/space_full01.mp3")
+// }
 function setup() {
     rectMode(CENTER)
     angleMode(DEGREES)
     createCanvas(WIDTH, HEIGHT)
     ship.setup();
 
-    // setTimeout(function () {
-    //     fullSong.setVolume(.5)
-    //     fullSong.loop();
-    //     console.log(fullSong.isPlaying());
-    // }, 1000);
 }
 //---------------DRAW-LOOP--------------------------
 function draw() {
     clear()
-    if (!fullSong.isPlaying()) {
+    if (fullSong && fullSong.isLoaded() && !fullSong.isPlaying()) {
         fullSong.setVolume(.5)
         fullSong.loop();
     }
