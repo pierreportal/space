@@ -50,7 +50,7 @@ if (hardMode && !gameIsOver) {
 //---------------SETUP------------------------------
 let fullSong;
 function preload() {
-    fullSong = loadSound("../assets/space_full01.wav")
+    fullSong = loadSound("assets/space_full01.wav")
 }
 function setup() {
     rectMode(CENTER)
