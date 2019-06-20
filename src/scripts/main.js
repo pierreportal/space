@@ -57,12 +57,20 @@ function setup() {
     angleMode(DEGREES)
     createCanvas(WIDTH, HEIGHT)
     ship.setup();
-    fullSong.setVolume(.5)
-    fullSong.loop();
+
+    // setTimeout(function () {
+    //     fullSong.setVolume(.5)
+    //     fullSong.loop();
+    //     console.log(fullSong.isPlaying());
+    // }, 1000);
 }
 //---------------DRAW-LOOP--------------------------
 function draw() {
     clear()
+    if (!fullSong.isPlaying()) {
+        fullSong.setVolume(.5)
+        fullSong.loop();
+    }
     score = hue + destroyed
     scoreDisplay.innerHTML = "🚀 " + score.toFixed(2) + " 👾 " + nDestroyed + " 🛸 " + nInvadersDestroyed;
     ship.draw();
