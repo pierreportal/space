@@ -15,9 +15,9 @@ let objects = {
     bacterias: [],
     invaders: [],
     fire: [],
-    lazer: []
+    lazer: [],
 }
-let invaderPopulate, planetPopulate, meteorPopulate, bacteriaPopulate;
+let invaderPopulate, planetPopulate, meteorPopulate, bacteriaPopulate /*,bossPopulate*/;
 let hue = 0;
 
 const ship = new Ship();
@@ -48,11 +48,17 @@ if (hardMode && !gameIsOver) {
     }, 30000);
 }
 //---------------SETUP------------------------------
+let fullSong;
+function preload() {
+    fullSong = loadSound("../assets/space_full01.wav")
+}
 function setup() {
     rectMode(CENTER)
     angleMode(DEGREES)
     createCanvas(WIDTH, HEIGHT)
     ship.setup();
+    fullSong.setVolume(.5)
+    fullSong.loop();
 }
 //---------------DRAW-LOOP--------------------------
 function draw() {

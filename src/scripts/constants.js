@@ -16,8 +16,12 @@ const restartButton = document.querySelector(".restrat_game");
 function hideInfos() {
     infoDisplay.style.display = 'none';
 }
-
-
+//-----
+// function goBosses() {
+//     let binaryRand = Math.round(Math.random())
+//     objects.bosses.push(new Boss(100, binaryRand));
+// }
+//--------
 
 function changeConstantSpeed() {
     constantSpeed += .2;
