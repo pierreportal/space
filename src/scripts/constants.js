@@ -59,9 +59,11 @@ function getCollistionBoxe(o) {
             x0: o.x + width / 2, x1: o.x + width / 2 + width,
             y0: o.y + height / 2, y1: o.y + height + height / 2,
         }
-    } else if (o === lazer) {
-        console.log("lazer")
-    } else {
+    }
+    //  else if (o === lazer) {
+    //     console.log("lazer")
+    // }
+    else {
         boxe = {
             x0: o.x, x1: o.x + width,
             y0: o.y, y1: o.y + height,
